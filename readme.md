@@ -15,3 +15,6 @@ A super quick and dirty way to keep track of hook states as killer.
 ### how to use
     press 1,2,3,4 to increase hookstate for survivor
     press 0 to reset all hookstates.
+
+### known issues
+    Numpad numbers don't work
