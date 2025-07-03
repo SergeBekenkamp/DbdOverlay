@@ -1,0 +1,27 @@
+{
+  "name": "DbdOverlay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "target": "es2022",
+  "module": "es2022",
+  "scripts": {
+    "dev": "node src/index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "gkm": "^0.2.0",
+    "http-server": "^14.1.1",
+    "io-listener": "^0.1.0",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.18.1",
+    "typescript": "^5.5.3"
+  },
+  "private": true,
+  "optionalDependencies": {
+    "bufferutil": "^4.0.9"
+  }
+}

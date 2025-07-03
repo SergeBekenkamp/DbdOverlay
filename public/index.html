@@ -1,0 +1,24 @@
+<html>
+<head>
+    <style>
+        html { background: transparent }
+        body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
+        overlay {
+            position: absolute;
+            bottom: 0;
+            color: white;
+        }
+    </style>
+    <script type="text/javascript">
+        let socket = new WebSocket('ws://localhost:8080');
+        socket.onmessage = function (message) {
+            const data = JSON.parse(message.data);
+            console.log('Received: ' + data, typeof data);
+            document.getElementById("overlay").innerText = Array.from(data).map(x=>x).join('\n')
+        };
+    </script>
+</head>
+<body>
+    <overlay id="overlay"></overlay>
+</body>
+</html>
